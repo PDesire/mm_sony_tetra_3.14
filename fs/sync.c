@@ -15,10 +15,8 @@
 #include <linux/pagemap.h>
 #include <linux/quotaops.h>
 #include <linux/backing-dev.h>
-<<<<<<< HEAD
 #include "internal.h"
 
-=======
 #include <linux/fsync.h>
 #include <linux/display_state.h>
 #include "internal.h"
@@ -38,7 +36,6 @@ void set_fsync(bool enable)
 		fsync_enabled = enable;
 }
 
->>>>>>> 2b6406d43... EXPERIMENTAL: fs: sync: add simple dynamic fsync
 #define VALID_FLAGS (SYNC_FILE_RANGE_WAIT_BEFORE|SYNC_FILE_RANGE_WRITE| \
 			SYNC_FILE_RANGE_WAIT_AFTER)
 
